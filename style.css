@@ -1,11 +1,12 @@
 body {
-    font-family: Roboto,arial,sans-serif;
+    font-family: roboto, arial, sans-serif;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 0;
     height: 100%;
+    margin: auto;
   }
 
 body, html {
@@ -29,7 +30,7 @@ a:hover {
   cursor: pointer;
 }
 
-img:hover {
+img:not(.logo):hover {
   cursor: pointer;
 }
 
@@ -107,8 +108,8 @@ ul > a {
   padding: 5px;
 }
 
-.searcharea:hover, .searchbox:hover {
-  background-color: #f0f0f0;
+.searcharea:hover {
+  box-shadow: 0 0 10px 0 #bfbfbf;
 }
 
 .buttons {
@@ -133,7 +134,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 8px 0 gray;
+  box-shadow: 0 0 10px 0 #bfbfbf;
 }
 
 .empty-space {
@@ -148,7 +149,13 @@ button:hover {
 .footer {
   display: flex;
   justify-content: space-between;
+  background-color: #f0f0f0;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 10px;
+  margin: 10px 0px;
+  padding: 5px 5px;
+}
+
+.carbon {
+  algin-self: center;
 }
