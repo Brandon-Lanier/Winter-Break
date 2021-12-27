@@ -1,19 +1,30 @@
-*, body {
-    font-size: 14px;
+body {
     font-family: Roboto,arial,sans-serif;
-    font-size: 1em;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    height: 100%;
   }
-
+body, html {
+  height: 100%;
+}
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
+
 
 a {
   margin: 5px;
   color: black;
+  padding: 1em;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .profile-button {
@@ -30,9 +41,68 @@ a {
   border-radius: 50%;
   width: 32px;
   height: 32px;
+  margin: 7px;
 }
 
-.header-links {
+.header-links-l {
   display: flex;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.header-links-r {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.logo {
+  width: 375px;
+  height: 150px;
+  align-self: center;
+}
+
+ul > img {
+  margin: 5px;
+}
+
+ul > a {
+  margin: 5px;
+}
+
+.searcharea {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  align-items: center;
+}
+
+.search {
+  display: block;
+  width: 50%;
+  height: 20px;
+  align-self: center;
+  margin: 30px 50px;
+  padding: 10px 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0 10px;
+  font-size: 14px;
+  padding: 7px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
