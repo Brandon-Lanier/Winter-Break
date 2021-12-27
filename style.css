@@ -7,24 +7,30 @@ body {
     padding: 0;
     height: 100%;
   }
+
 body, html {
   height: 100%;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
 }
 
-
 a {
   margin: 5px;
   color: black;
-  padding: 1em;
+  padding: 5px;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 .profile-button {
@@ -44,6 +50,16 @@ a:hover {
   margin: 7px;
 }
 
+.profile_image:hover {
+  box-shadow: 0 0 10px 0 gray;
+  border-radius: 15px;
+}
+
+.apps_image:hover {
+  box-shadow: 0 0 5px 0 gray;
+  border-radius: 15px;
+}
+
 .header-links-l {
   display: flex;
   align-items: center;
@@ -59,13 +75,14 @@ a:hover {
 }
 
 .logo {
-  width: 375px;
-  height: 150px;
+  width: 400px;
+  height: 175px;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 ul > img {
-  margin: 5px;
+  margin: 10px;
 }
 
 ul > a {
@@ -73,20 +90,25 @@ ul > a {
 }
 
 .searcharea {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-shrink: 1;
+  display: flex;
+  align-self: center;
+  margin: 10px 0;
+  padding: 0;
+  width: 600px;
+  height: 40px;
+  justify-content: space-between;
   align-items: center;
+  border: solid 1px gray;
+  border-radius: 20px;
 }
 
-.search {
-  display: block;
-  width: 50%;
-  height: 20px;
-  align-self: center;
-  margin: 30px 50px;
-  padding: 10px 10px;
+.searcharea > img {
+  margin: 5px;
+  padding: 5px;
+}
+
+.searcharea:hover, .searchbox:hover {
+  background-color: #f0f0f0;
 }
 
 .buttons {
@@ -95,14 +117,38 @@ ul > a {
   justify-content: center;
 }
 
+input {
+  flex-grow: 1;
+  border: none;
+  height: 35px;
+  outline: none;
+}
+
 button {
-  margin: 0 10px;
+  margin: 10px 15px;
   font-size: 14px;
-  padding: 7px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 8px 0 gray;
+}
+
+.empty-space {
+  flex-grow: 1;
+}
+
+.footer-list {
+  margin: 5px 0;
+  padding: 0 0;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0 10px;
 }
